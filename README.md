@@ -1,6 +1,28 @@
 # Pizza_Sales_KPI_Dashboard_Project
 MySQL & Excel project including data validation and data cleaning
 
+Business Insights
+Total revenue across the dataset was $817,860.
+
+**Busiest days and times**
+* Orders are highest on Thursday,Friday & Saturday.
+* Maximum orders are from 12-1PM & 5-7PM.
+
+**Sales by Categoty and Size** 
+* Classic category contributes the  maximum sales.
+* Large & Large & Medium sizes have the  highest demand.
+
+**Best 5 & Worst 5 Sellers**
+* Classic Deluxe And Barbecue Chicken Pizzas are best revenue generators.
+* Brie Carre has the lowest demand.
+
+Recommendation
+Promote large pizzas during high-demand periods to increase revenue.
+Conside bundling low performance products to boost overall sales.
+  
+
+* SQL Queries
+
 1.	Total Revenue
 Query : SELECT SUM(total_price) AS Total_Revenue FROM pizza_sales;
 
@@ -64,18 +86,12 @@ GROUP BY pizza_name
 ORDER BY Quantity_Sold
 LIMIT 5; 
 
-Business insights
-**Busiest days and times**
-* Orders are highest on Thursday,Friday & Saturday.
-* Maximum orders are from 12-1PM & 5-7PM.
-
-**Sales by Categoty and Size** 
-* Classic category contributes the  maximum sales.
-* Large & Large & Medium sizes have the  highest demand.
-
-**Best 5 & Worst 5 Sellers**
-* Classic Deluxe And Barbecue Chicken Pizzas are best revenue generators.
-* Brie Carre has the lowest demand.
+Excel Processes
+1.	Change Data Description for pizza_size column
+2.	Added a Order_Day column to extract the day of each order
+3.	Added a Order_Hour column to find out the hourly trend
+4.	Added a new column as Total_Order to calculate the number of order 
+( Distinct Count ) 
 
 
 
